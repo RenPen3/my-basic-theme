@@ -1,0 +1,22 @@
+<head>
+  <meta charset="utf-8">
+  <title>{{ shop.name }}</title>
+  {{ content_for_header }}
+
+  {% render 'fontawesome' %}
+
+  {{ 'theme.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'theme.js' | asset_url }}" defer></script>
+</head>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ shop.name }}</title>
+    {{ content_for_header }}
+  </head>
+  <body>
+    {{ content_for_layout }}
+  </body>
+</html>
