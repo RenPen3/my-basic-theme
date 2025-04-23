@@ -1,15 +1,12 @@
 <section id="announcement-bar" class="announcement-bar">
-  {% comment %} <p class="announcement-bar__text"> {% endcomment %}
-    {{ section.settings.announcement-bar }}
-    {% comment %} </p> {% endcomment %}
-  {% comment %} <p>Free Shipping on orders over $50</p> {% endcomment %}
+ <p class="announcement-bar__text"> {{ section.settings.announcement-bar }} </p>
 </section>
 
 {%  schema  %} 
   {
     "name": "Announcement Bar",
     "tag": "section",
-    "class": "announcement-bar",
+    "class": "announcement-bar__text",
     "settings": [
       {
         "type": "text",
