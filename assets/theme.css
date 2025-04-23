@@ -32,6 +32,8 @@ width: 100%;
 }
 .announcement-bar {
   text-align: center;
+  padding: 0.7em;
+  
 }
 .announcement-bar__text {
   font-size: 0.9rem;
