@@ -14,8 +14,8 @@
         "type": "announcement-bar",
         "settings": {
           "announcement_text": "Free Shipping on orders over $50",
-          "announcement_text_color": "#FAFAFA",
-          "announcementBar": "#008dff"
+          "announcement_text_color": "#fafafa",
+          "announcementBar": "#000000"
         }
       },
       "header": {
