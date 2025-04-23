@@ -13,7 +13,7 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "announcement-bar": "Free Shipping on order over $50"
+          "announcement-bar": "This is the announcement bar for this website"
         }
       },
       "header": {
