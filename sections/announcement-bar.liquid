@@ -1,0 +1,35 @@
+<section id="announcementBar" class="announcement-bar" style="background-color: {{ section.settings.announcementBar }};">
+  <p class="announcement-bar__text" style="color: {{ section.settings.announcement_text_color }};">
+    {{ section.settings.announcement_text }}
+  </p>
+</section>
+
+{% schema %}
+{
+  "name": "Announcement Bar",
+  "tag": "section",
+  "class": "announcement-bar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "announcement_text",
+      "label": "Announcement Bar Text",
+      "default": "Free Shipping on orders over $50"
+    },
+    {
+      "type": "color",
+      "id": "announcement_text_color",
+      "label": "Text Color",
+      "default": "#FAFAFA"
+    },
+    {
+      "type": "color",
+      "id": "announcementBar",
+      "label": "Background Color",
+      "default": "#000000"
+    }
+  ]
+}
+{% endschema %}
+
+

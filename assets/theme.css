@@ -11,7 +11,7 @@ margin: 0;
 body {
 font-family: "Instrument Sans", sans-serif;
 margin: 0;
-background: #222;
+background: #777;
 scroll-behavior: smooth;
 }
 li {
@@ -31,13 +31,11 @@ object-fit: cover;
 width: 100%;
 }
 .announcement-bar {
-  text-align: center;
-  background: #121315;
-  padding: 0.7em;
+  text-align: center;  
 }
 .announcement-bar__text {
   font-size: 0.9rem;
-  color: #fafafa;
+  padding: 0.7em;
 }
 .nav {
   background: #fff;
