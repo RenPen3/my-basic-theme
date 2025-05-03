@@ -78,14 +78,15 @@
 
 {% schema  %} 
 {
-    "name": "Header",
-    "tag": "section",
-    "class": "nav",
-    "settings": [{
-      "type": "image_picker",
-      "id": "header_image",
-      "label": "Image Picker"
-    }]
+  "name": "Header",
+  "settings": [
+    {
+      "type": "color",
+      "id": "header_bg_color",
+      "label": "Background Color",
+      "default": "#000000"
+    }
+  ]
 }
 
 {% endschema %}
