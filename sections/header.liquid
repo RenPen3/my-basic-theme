@@ -76,28 +76,20 @@
   </div>
 </header>
 
-{% schema %}
+{%  schema  %} 
 {
   "name": "Header",
-  "tag": "header",
+  "tag": "section",
   "class": "nav",
   "settings": [
     {
       "type": "image_picker",
-      "id": "header_image",
-      "label": "Image Picker"
-    },
-    {
-      "type": "range",
-      "id": "image_width",
-      "label": "Image Width (px)",
-      "min": 50,
-      "max": 800,
-      "step": 10,
-      "default": 200
+      "id": "image_picker",
+      "label": "Choose Image"
     }
   ]
 }
-{% endschema %}
+
+ {% endschema %}
 
 
