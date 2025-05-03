@@ -1,12 +1,14 @@
-<header id="navbar" class="nav">
+<header class="nav">
   <div class="nav-content">
     <a class="nav-logo" href="#">
-      <img
+      <img src="{{ section.settings.header_image | img_url: 'master' }}" alt="Header image">
+
+      {% comment %} <img id="nav-logo-image"
         src="https://www.fender.com/cdn/shop/files/fender_logo.svg?v=1741186043&width=290"
         width="290px"
         height="auto"
         alt="Red Fender Logo"
-      >
+      > {% endcomment %}
     </a>
     <form class="nav-content__form" action="/search">
       <button class="nav-content__button">
@@ -78,7 +80,14 @@
 {
   "name": "Header",
   "tag": "header",
-  "class": "navbar"
+  "class": "nav",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "header_image",
+      "label": "Image Picker"
+    }
+  ]
 }
 {% endschema %}
 
