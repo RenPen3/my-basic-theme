@@ -20,10 +20,16 @@
       },
       "header": {
         "type": "header",
-        "settings": {}
+        "settings": {
+          "header_image": "shopify://shop_images/fender_logo_b42b4860-d803-4090-bb15-ab7542839b2a.jpg"
+        }
       },
       "homepage": {
         "type": "homepage",
+        "settings": {}
+      },
+      "hero": {
+        "type": "hero",
         "settings": {}
       }
     },
