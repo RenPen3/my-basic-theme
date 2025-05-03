@@ -7,30 +7,17 @@
   </p>
 </section>
 
-{% schema %}
+{% schema %} 
 {
-  "name": "Announcement Bar",
+  "name": "Header",
   "tag": "section",
   "class": "announcement-bar",
-  "settings": [
-    {
-      "type": "text",
-      "id": "announcement_text",
-      "label": "Announcement Bar Text",
-      "default": "Free Shipping on orders over $50"
-    },
-    {
-      "type": "color",
-      "id": "announcement_text_color",
-      "label": "Text Color",
-      "default": "#FAFAFA"
-    },
-    {
-      "type": "color",
-      "id": "announcementBar",
-      "label": "Background Color",
-      "default": "#000000"
-    }
-  ]
+  "settings": [{
+    "type": "color",
+    "id": "color-picker",
+    "label": "Color Picker"
+  }]
+
 }
+
 {% endschema %}
