@@ -1,26 +1,23 @@
-<section
-  class="announcement-bar"
-  style="background-color: {{ section.settings.announcementBar }};"
->
-  <p class="announcement-bar__text" style="color: {{ section.settings.announcement_text_color }};">
-    {{ section.settings.announcement_text }}
+<section class="announcement-bar" style="background: {{section.settings.announcement-bar}};">
+  <p class="announcement-bar__text">
+    {{section.settings.announcement-bar_text}}
   </p>
 </section>
 
-{% schema %} 
+{% schema %}
 {
   "name": "Announcement Bar",
   "tag": "section",
   "class": "announcement-bar",
   "settings": [
     {
-    "type": "color",
-    "id": "announcementBar",
-    "label": "Color Picker",
-    "default": "#000000"
-  }
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#000000"
+    }
 ]
-
 }
+
 
 {% endschema %}
