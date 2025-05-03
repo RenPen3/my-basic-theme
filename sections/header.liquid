@@ -1,12 +1,14 @@
-<header id="navbar" class="nav">
+<header class="nav" style="background-color: {{ section.settings.header_bg_color }};">
   <div class="nav-content">
     <a class="nav-logo" href="#">
-      <img
+      <img src="{{ section.settings.header_image | img_url: 'master' }}" alt="Header image">
+
+      {% comment %} <img id="nav-logo-image"
         src="https://www.fender.com/cdn/shop/files/fender_logo.svg?v=1741186043&width=290"
         width="290px"
         height="auto"
         alt="Red Fender Logo"
-      >
+      > {% endcomment %}
     </a>
     <form class="nav-content__form" action="/search">
       <button class="nav-content__button">
@@ -74,10 +76,19 @@
   </div>
 </header>
 
-{% schema %}
+{% schema  %} 
 {
   "name": "Header",
-  "tag": "header",
-  "class": "nav"
+  "settings": [
+    {
+      "type": "color",
+      "id": "header_bg_color",
+      "label": "Background Color",
+      "default": "#000000"
+    }
+  ]
 }
+
 {% endschema %}
+
+
