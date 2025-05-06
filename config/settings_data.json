@@ -13,17 +13,23 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "announcement_text": "Free Shipping on orders over $50",
-          "announcement_text_color": "#efefef",
-          "announcementBar": "#000000"
+          "announcement_text": "Free Shipping on Orders $50 and Over",
+          "announcement_background_color": "#000000",
+          "announcement_text_color": "#efefef"
         }
       },
       "header": {
         "type": "header",
-        "settings": {}
+        "settings": {
+          "header_bg_color": "#000000"
+        }
       },
       "homepage": {
         "type": "homepage",
+        "settings": {}
+      },
+      "hero": {
+        "type": "hero",
         "settings": {}
       }
     },
