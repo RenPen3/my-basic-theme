@@ -1,6 +1,6 @@
 <section class="announcement-bar" style="background-color: {{ section.settings.announcement_background_color }};">
 <p class="announcement-bar__text" style="color:{{ section.settings.announcement_text_color }};">
- Hello
+ {{ section.settings.announcement_text }}
 </p>
 </section>
 
@@ -8,6 +8,12 @@
 {
   "name": "Announcement Bar",
   "settings": [
+    {
+      "type": "text",
+      "id": "announcement_text",
+      "label": "Text",
+      "default": "Free Shipping on Order Over $50"
+    },
     {
       "type": "color",
       "id": "announcement_background_color",
