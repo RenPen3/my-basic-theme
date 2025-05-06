@@ -1,5 +1,5 @@
-<section class="announcement-bar" style="background-color: {{ section.settings.background_color }};">
-<p class="announcement-bar__text">
+<section class="announcement-bar" style="background-color: {{ section.settings.announcement_background_color }};">
+<p class="announcement-bar__text" style="color:{{ section.settings.announcement_text_color }};">
  Hello
 </p>
 </section>
@@ -10,9 +10,15 @@
   "settings": [
     {
       "type": "color",
-      "id": "background_color",
+      "id": "announcement_background_color",
       "label": "Background Color",
       "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "announcement_text_color",
+      "label": "Text Color",
+      "default": "#FFFFFF"
     }
   ]
 }
