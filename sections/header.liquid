@@ -56,7 +56,7 @@
       {% comment %} <li>
         <a href="#"><span class="nav-nav__red">Spring Deals</span></a>
       </li> {% endcomment %}
-      {% for link in linklists.main-menu.link %}
+      {% for link in linklists.main-menu.links %}
       <li>
         <a href="{{ link.url }}">{{ link.title }}</a>
         </li>
@@ -90,7 +90,7 @@
       "id": "header_bg_color",
       "label": "Background Color",
       "default": "#000000"
-    },
+    }
     // {
     //   "type": "link_list",
     //   "id": "header_nav_links",
