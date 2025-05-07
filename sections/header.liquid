@@ -51,25 +51,26 @@
   </div>
   <div class="nav-nav">
     <!-- <div> -->
-     
-    <ul class="nav-nav__menu">
-      {% comment %} <li>
-        <a href="#"><span class="nav-nav__red">Spring Deals</span></a>
-      </li> {% endcomment %}
-      {% for link in section.settings.header_nav_links %}
-      <li>
-        <a href="{{ link.url }}">{{ link.title }}</a>
-        </li>
-      {% endfor %}
-      {% comment %} <li><a href="#">Mod Shop</a></li>
-      <li><a href="#">Electric Guitars</a></li>
-      <li><a href="#">Basses</a></li>
-      <li><a href="#">Acoustic</a></li>
-      <li><a href="#">Squier</a></li>
-      <li><a href="#">Amplifiers & Effects</a></li>
-      <li><a href="#">Parts</a></li>
-      <li><a href="#">Accessories</a></li> {% endcomment %}
-    </ul>
+     {% if section.settings.link_list %}
+      <ul class="nav-nav__menu">
+        {% comment %} <li>
+          <a href="#"><span class="nav-nav__red">Spring Deals</span></a>
+        </li> {% endcomment %}
+        {% for link in section.settings.header_nav_links %}
+        <li>
+          <a href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+        {% comment %} <li><a href="#">Mod Shop</a></li>
+        <li><a href="#">Electric Guitars</a></li>
+        <li><a href="#">Basses</a></li>
+        <li><a href="#">Acoustic</a></li>
+        <li><a href="#">Squier</a></li>
+        <li><a href="#">Amplifiers & Effects</a></li>
+        <li><a href="#">Parts</a></li>
+        <li><a href="#">Accessories</a></li> {% endcomment %}
+      </ul>
+    {% endif %}
     <!-- </div> -->
     <!-- <div> -->
     <ul class="nav-nav__menu">
