@@ -51,12 +51,12 @@
   </div>
   <div class="nav-nav">
     <!-- <div> -->
-     {% if section.settings.link_list %}
+     {% if section.settings.header_nav_links %}
       <ul class="nav-nav__menu">
         {% comment %} <li>
           <a href="#"><span class="nav-nav__red">Spring Deals</span></a>
         </li> {% endcomment %}
-        {% for link in linklists[section.settings.header_nav_links].links %}
+        {% for link in linklists[section.settings.link_list].links %}
         <li>
           <a href="{{ link.url }}">{{ link.title }}</a>
           </li>
