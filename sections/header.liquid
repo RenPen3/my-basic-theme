@@ -56,7 +56,7 @@
       {% comment %} <li>
         <a href="#"><span class="nav-nav__red">Spring Deals</span></a>
       </li> {% endcomment %}
-      {% for link in linkslist[section.settings.link_list].links %}
+      {% for link in linkslist[section.settings.header_nav_links].links %}
       <li>
         <a href="{{ link.url }}"> {{ link.title }}</a>
         </li>
