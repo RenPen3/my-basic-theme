@@ -1,7 +1,7 @@
 <header class="nav" style="background-color: {{ section.settings.header_bg_color }};">
   <div class="nav-content">
     <a class="nav-logo" href="#">
-      <img src="{{ section.settings.header_image | img_url: 'master' }}" alt="Header image">
+      <img src="{{ section.settings.header_logo | img_url: 'master' }}" alt="Header image">
 
       {% comment %} <img id="nav-logo-image"
         src="https://www.fender.com/cdn/shop/files/fender_logo.svg?v=1741186043&width=290"
@@ -58,7 +58,7 @@
         </li> {% endcomment %}
         {% for link in linklists[section.settings.nav_links].links %}
         <li>
-          <a href="{{ link.url }}">{{ link.title }}</a>
+          <a href="{{ link.url }}" levels>{{ link.title }}</a>
           </li>
         {% endfor %}
         {% comment %} <li><a href="#">Mod Shop</a></li>
@@ -90,7 +90,12 @@
       "type": "color",
       "id": "header_bg_color",
       "label": "Background Color",
-      "default": "#000000"
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "image_picker",
+      "id": "header_logo",
+      "label": "Header Logo"
     },
     {
       "type": "link_list",
