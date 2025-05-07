@@ -51,19 +51,24 @@
   </div>
   <div class="nav-nav">
     <!-- <div> -->
+     
     <ul class="nav-nav__menu">
-      <li>
+      {% comment %} <li>
         <a href="#"><span class="nav-nav__red">Spring Deals</span></a>
-      </li>
-      <li><a href="#">New & Trending</a></li>
-      <li><a href="#">Mod Shop</a></li>
+      </li> {% endcomment %}
+      {% for link in linklist.main-menu.links %}
+      <li>
+        <a href="{{ link.url }}"> {{ link.title }}</a>
+        </li>
+      {% endfor %}
+      {% comment %} <li><a href="#">Mod Shop</a></li>
       <li><a href="#">Electric Guitars</a></li>
       <li><a href="#">Basses</a></li>
       <li><a href="#">Acoustic</a></li>
       <li><a href="#">Squier</a></li>
       <li><a href="#">Amplifiers & Effects</a></li>
       <li><a href="#">Parts</a></li>
-      <li><a href="#">Accessories</a></li>
+      <li><a href="#">Accessories</a></li> {% endcomment %}
     </ul>
     <!-- </div> -->
     <!-- <div> -->
