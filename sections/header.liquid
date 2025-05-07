@@ -58,7 +58,7 @@
       </li> {% endcomment %}
       {% for link in section.settings.header_nav_links %}
       <li>
-        <a href="{{ link.url }}">{{ link.title }}</a>
+        <a href="{{ section.settings.link.url }}">{{ section.settings.link.title }}</a>
         </li>
       {% endfor %}
       {% comment %} <li><a href="#">Mod Shop</a></li>
