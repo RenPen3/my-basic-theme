@@ -11,7 +11,7 @@ margin: 0;
 body {
 font-family: "Instrument Sans", sans-serif;
 margin: 0;
-background: #777;
+background: lime;
 scroll-behavior: smooth;
 }
 li {
@@ -26,7 +26,7 @@ display: block;
 background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
--o-object-fit: cover;
+/* -o-object-fit: cover; */
 object-fit: cover;
 width: 100%;
 }
@@ -151,6 +151,7 @@ width: 100%;
 
 /* HERO SECTION */
 .hero {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -158,15 +159,15 @@ width: 100%;
 .hero img {
   height: 540px;
 }
-/* // .hero::after {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   content: "";
-//   width: 100%;
-//   height: 100.5%;
-//   background: rgba(0, 0, 0, .9);
-// } */
+.hero::after {
+   position: absolute;
+   top: 0;
+   left: 0;
+   content: "";
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, .3);
+ }
 
 .hero-vid {
   position: relative;
@@ -176,8 +177,9 @@ width: 100%;
 .hero-content {
   position: absolute;
   max-width: 600px;
-  z-index: 1;
   padding-left: 4em;
+  z-index: 1;
+
 
   & img {
     display: block;
