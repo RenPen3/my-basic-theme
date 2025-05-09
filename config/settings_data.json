@@ -14,16 +14,27 @@
         "type": "announcement-bar",
         "settings": {
           "announcement_text": "Free Shipping on orders over $50",
-          "announcement_text_color": "#efefef"
+          "announcement_text_color": "#efefef",
+          "background_color": "#000000"
         }
       },
       "header": {
         "type": "header",
-        "settings": {}
+        "settings": {
+          "header_bg_color": "#ffffff",
+          "header_logo": "shopify://shop_images/fender_logo_b42b4860-d803-4090-bb15-ab7542839b2a.jpg",
+          "nav_links": "main-menu"
+        }
       },
       "homepage": {
         "type": "homepage",
         "settings": {}
+      },
+      "hero": {
+        "type": "hero",
+        "settings": {
+          "hero_image": "shopify://shop_images/hero_img.webp"
+        }
       }
     },
     "content_for_index": []
