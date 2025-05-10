@@ -23,8 +23,8 @@
     <img
       width="250px"
       height="auto"
-      src="https://images.ctfassets.net/mdpgzc1lmx9t/7hAg4ALONJI5fPUHSLn35o/362644abce073e24598be8a45fb06fd7/PlayerIIModified_Tag_Black.png"
-      alt=""
+      src="{{ section.settings.hero_title_image |  image_url: "master"  }}"
+      alt="title image"
     >
     <!-- <h1>Header Title <span>Goes Here</span></h1> -->
     <div class="hero-content__inner">
@@ -47,9 +47,14 @@
         "label": "Hero Image"
       },
       {
+        "type": "image_picker",
+        "id": "hero_title_image",
+        "label": "Title Image"
+      },
+      {
         "type": "text",
         "id": "hero_text",
-        "label": "Hero Title",
+        "label": "Hero Sub-header",
         "default": "Select Player II models souped up with performance-driven mods right out of the box."
       },
     ]
