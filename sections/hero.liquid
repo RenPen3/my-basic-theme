@@ -1,24 +1,19 @@
 <section class="hero" style="{{ section.settings.hero_overlay }}">
-
+  {% if section.settings.hero_video or section.settings.hero_image %}
+  <video autoplay loop playsinline muted class="hero-vid">
+    {% comment %} <source src="{{ section.settings.hero_video | video_url }}" type="video/mp4"> {% endcomment %}
+    <source src="https://videos.ctfassets.net/mdpgzc1lmx9t/71HFG5t7wKC6wbo3bNiKxe/815d47625bfca1616e73ea8ea4902cee/HPS_Khruangbin_v3_opt.mp4" type="video/mp4">
+  </video>
+  {% else %}
   <img
     width="1200px"
     height="auto"
     src="{{ section.settings.hero_image | img_url: 'master' }}" alt="hero image">
-  <!--
-    <img
+    {% comment %} <img
       src="https://images.ctfassets.net/mdpgzc1lmx9t/230JYfBuqSZg9qLBsryTmT/8b40ecdd7d1b36ba8a24053cac40b011/Web_Fender_04_08_25_Fender_Stories_Collection_Mike_Campbell__Red_Dog__Telecaster_NPI_Launch_Shop_Hero_Desktop.webp"
       alt="hero image"
-    />
-  -->
-  <!--
-    <video
-      class="hero-vid"
-      src="assets/video/bg-vid.mp4"
-      frameborder="0"
-      autoplay="1"
-      loop="1"
-    ></video>
-  -->
+    /> {% endcomment %}
+  {% endif %}
   <div class="hero-content">
     <img
       width="250px"
@@ -28,7 +23,7 @@
     >
     <!-- <h1>Header Title <span>Goes Here</span></h1> -->
     <div class="hero-content__inner">
-      <p> {{ section.settings.hero_text }}</p>
+      <p></p>
       <div class="hero-btns">
         <a class="hero-btn" href="#">Shop Now</a>
         <a class="hero-learn-btn" href="#">Learn More</a>
@@ -52,11 +47,17 @@
         "label": "Title Image"
       },
       {
-        "type": "text",
-        "id": "hero_text",
-        "label": "Hero Sub-header",
-        "default": "Select Player II models souped up with performance-driven mods right out of the box."
+        "type": "video_url",
+        "id": "hero_video",
+        "label": "Hero Video",
+        "accept": ["youtube"]
       },
+      {
+        "type": "color",
+        "id": "hero_text",
+        "label": "Hero Sub-header Color",
+        "default": "#FFFFFF"
+      }
     ]
   }
 {% endschema %}
