@@ -1,19 +1,25 @@
-<section class="test-bar">
-  <p style="color: {{section.settings.test__bar}};">Hello</p>
+<section class="test-bar" style="background-color:{{ section.settings.bg__color }};">
+  <p class="test-bar-text" style="color: {{section.settings.test__bar}};">Hello</p>
 </section> 
 
 {% schema %}
 
 {
-"name": "testBar",
+"name": "Text Color",
 "tag": "section",
-"class": "test-bar",
 "settings": [{
   "type": "color",
   "id": "test__bar",
-  "label": "header"
-}]
-}
+  "label": "Text Color"
+},
+{
+  "type": "color_background",
+  "id": "bg__color",
+  "label": "Background Color",
+  "default": "#FFFFFF"
+  }
+
+]}
 
 
 
