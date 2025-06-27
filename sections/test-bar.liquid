@@ -1,5 +1,5 @@
 <section class="test-bar">
-  <p>Hello this is the test bar</p>
+  <p style="color: {{section.settings.test__bar}};">Hello</p>
 </section> 
 
 {% schema %}
@@ -9,7 +9,7 @@
 "tag": "section",
 "class": "test-bar",
 "settings": [{
-  "type": "text",
+  "type": "color",
   "id": "test__bar",
   "label": "header"
 }]
