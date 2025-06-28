@@ -23,36 +23,11 @@
 {
   "name": "Cards",
   "tag": "section",
-  "settings": [
-      {
-        "type": "text",
-        "id": "slideshow__title",
-        "label": "Card Title",
-        "default": "Card Title Goes Here"
-      }, 
-      {
-        "type": "color",
-        "id": "slideshow__title__color",
-        "label": "Title Color",
-        "default": "#000000"
-      },
-      {
-        "type": "text",
-        "id": "slideshow__sub__text",
-        "label": "Sub-text",
-        "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempora dolorum."
-      },
-      {
-        "type": "color",
-        "id": "slideshow__sub__text__color",
-        "label": "Sub-text Color",
-        "default": "#000000"
-      }
-    ],
+  "settings": [],
   "blocks": [
     {
-      "name": "Cards",
       "type": "collection",
+      "name": "Card",
       "settings": [
       {
         "type": "text",
@@ -80,6 +55,20 @@
       }
     ],
     "limit": 6
+    }
+  ],
+   "presets": [
+    {
+      "name": "Cards Section",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        }
+      ]
     }
   ]
 }
