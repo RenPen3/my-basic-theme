@@ -1,7 +1,7 @@
 <section class="slideshow">
-{% for blocks in section.blocks %}
 
   <div class="slideshow-content">
+{% for block in section.blocks %}
 
     <div class="slideshow-card">
       <div class="slideshow-img">
@@ -15,9 +15,9 @@
     </div>
 
 
+  {% endfor %}
 
   </div> 
-  {% endfor %}
 </section>
 
 {% schema %}
