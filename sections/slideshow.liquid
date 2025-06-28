@@ -1,21 +1,21 @@
 <section class="slideshow">
 
   <div class="slideshow-content">
-{% for block in section.blocks %}
+    {% for block in section.blocks %}
 
-    <div class="slideshow-card">
-      <div class="slideshow-img">
-        <img src="https://placehold.co/1200x600" width="1200px" height="auto" alt="image1">
+      <div class="slideshow-card">
+        <div class="slideshow-img">
+          <img src="https://placehold.co/1200x600" width="1200px" height="auto" alt="image1">
+        </div>
+        <div class="slideshow-body">
+          <div class="slideshow-title" style="color: {{ block.settings.card_title_color }}">{{ block.settings.card_title }}</div>
+          <div class="slideshow-text" style="color:{{ block.settings.card_sub_text_color }};">{{ block.settings.card_sub_text }}</div>
+        </div>
+        <a href="#" class="slideshow-btn">Shop Now</a>
       </div>
-      <div class="slideshow-body">
-        <div class="slideshow-title" style="color: {{ section.settings.card_title_color }}">{{ section.settings.card_title }}</div>
-        <div class="slideshow-text" style="color:{{ section.settings.card_sub_text_color }};">{{ section.settings.card_sub_text }}</div>
-      </div>
-      <a href="#" class="slideshow-btn">Shop Now</a>
-    </div>
 
 
-  {% endfor %}
+    {% endfor %}
 
   </div> 
 </section>
