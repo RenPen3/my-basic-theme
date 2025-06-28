@@ -59,26 +59,34 @@
     "id": "slideshow__title",
     "label": "Card Title",
     "default": "Card Title Goes Here"
-    },
+    }    
+  ],
+  "blocks": [
     {
-    "type": "color",
-    "id": "slideshow__title__color",
-    "label": "Card Title Color",
-    "default": "#000000"
-    },
-    {
-      "type": "text",
-      "id": "slideshow__sub__text",
-      "label": "Card Sub Text",
-      "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempora dolorum."
-    },
-    {
+      "name": "Cards",
+      "type": "slide",
+      "settings": [
+        {
       "type": "color",
-      "id": "slideshow__sub__text__color",
-      "label": "Card Sub Text Color",
+      "id": "slideshow__title__color",
+      "label": "Card Title Color",
       "default": "#000000"
+      },
+      {
+        "type": "text",
+        "id": "slideshow__sub__text",
+        "label": "Card Sub Text",
+        "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempora dolorum."
+      },
+      {
+        "type": "color",
+        "id": "slideshow__sub__text__color",
+        "label": "Card Sub Text Color",
+        "default": "#000000"
+      }
+    ]
     }
-]
+  ]
 }
 
 {% endschema %}
