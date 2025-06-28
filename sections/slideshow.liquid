@@ -36,7 +36,7 @@
 
     <div class="slideshow-card">
       <div class="slideshow-img">
-        <img src="{{ section.settings.slideshow__image |  image_tag }}" width="1200px" height="auto" alt="image1">
+        <img src="{{ section.settings.slideshow__image |  image_url: 'master'}}" width="1200px" height="auto" alt="image1">
       </div>
       <div class="slideshow-body">
         <div class="slideshow-title">{{ section.settings.slideshow__text }}</div>
