@@ -36,7 +36,7 @@
 
     <div class="slideshow-card">
       <div class="slideshow-img">
-        <img src="{{ section.settings.slideshow__image | img_url  }}" width="1200px" height="auto" alt="image1">
+        <img src="https://placehold.co/1200x600" width="1200px" height="auto" alt="image1">
       </div>
       <div class="slideshow-body">
         <div class="slideshow-title" style="color: {{ section.settings.slideshow__title__color }}">{{ section.settings.slideshow__title }}</div>
@@ -54,11 +54,6 @@
   "name": "Cards",
   "tag": "section",
   "settings": [
-    {
-    "type": "image_picker",
-    "id": "slideshow__image",
-    "label": "Card Image"
-    },
     {
     "type": "text",
     "id": "slideshow__title",
