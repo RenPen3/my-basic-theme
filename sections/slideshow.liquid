@@ -8,8 +8,8 @@
         <img src="https://placehold.co/1200x600" width="1200px" height="auto" alt="image1">
       </div>
       <div class="slideshow-body">
-        <div class="slideshow-title" style="color: {{ section.settings.slideshow_title_color }}">{{ section.settings.slideshow_title }}</div>
-        <div class="slideshow-text" style="color:{{ section.settings.slideshow_sub_text_color }};">{{ section.settings.slideshow_sub_text }}</div>
+        <div class="slideshow-title" style="color: {{ section.settings.card_title_color }}">{{ section.settings.card_title }}</div>
+        <div class="slideshow-text" style="color:{{ section.settings.card_sub_text_color }};">{{ section.settings.card_sub_text }}</div>
       </div>
       <a href="#" class="slideshow-btn">Shop Now</a>
     </div>
@@ -33,25 +33,25 @@
       "settings": [
       {
         "type": "text",
-        "id": "slideshow_title",
+        "id": "card_title",
         "label": "Card Title",
         "default": "Card Title Goes Here"
       }, 
       {
         "type": "color",
-        "id": "slideshow_title_color",
+        "id": "card_title_color",
         "label": "Title Color",
         "default": "#000000"
       },
       {
         "type": "text",
-        "id": "slideshow_sub_text",
+        "id": "card_sub_text",
         "label": "Sub-text",
         "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempora dolorum."
       },
       {
         "type": "color",
-        "id": "slideshow_sub_text_color",
+        "id": "card_sub_text_color",
         "label": "Sub-text Color",
         "default": "#000000"
       }
