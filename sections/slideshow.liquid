@@ -1,0 +1,71 @@
+<section class="slideshow">
+  <div class="slideshow-content">
+
+    <div class="slideshow-card">
+      <div class="slideshow-img">
+        <img src="https://placehold.co/1200x600" width="1200px" height="auto" alt="image1">
+      </div>
+      <div class="slideshow-body">
+        <div class="slideshow-title">Card One Title</div>
+        <div class="slideshow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempora dolorum.</div>
+      </div>
+      <a href="#" class="slideshow-btn">Shop Now</a>
+    </div>
+
+    <div class="slideshow-card">
+      <div class="slideshow-img">
+        <img src="https://placehold.co/1200x600" width="1200px" height="auto" alt="image1">
+      </div>
+      <div class="slideshow-body">
+        <div class="slideshow-title">Card One Title</div>
+        <div class="slideshow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempora dolorum.</div>
+      </div>
+      <a href="#" class="slideshow-btn">Shop Now</a>
+    </div>
+
+    <div class="slideshow-card">
+      <div class="slideshow-img">
+        <img src="https://placehold.co/1200x600" width="1200px" height="auto" alt="image1">
+      </div>
+      <div class="slideshow-body">
+        <div class="slideshow-title">Card One Title</div>
+        <div class="slideshow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempora dolorum.</div>
+      </div>
+      <a href="#" class="slideshow-btn">Shop Now</a>
+    </div>
+
+    <div class="slideshow-card">
+      <div class="slideshow-img">
+        <img src="{{ section.settings.slideshow__image |  image_tag }}" width="1200px" height="auto" alt="image1">
+      </div>
+      <div class="slideshow-body">
+        <div class="slideshow-title">{{ section.settings.slideshow__text }}</div>
+        <div class="slideshow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempora dolorum.</div>
+      </div>
+      <a href="#" class="slideshow-btn">Shop Now</a>
+    </div>
+
+  </div> 
+</section>
+
+{% schema %}
+
+{
+  "name": "Cards",
+  "tag": "section",
+  "settings": [
+    {
+    "type": "image_picker",
+    "id": "slideshow__image",
+    "label": "Card Image"
+    },
+    {
+    "type": "text",
+    "id": "slideshow__text",
+    "label": "Card Title",
+    "default": "Card Title Goes Here"
+    }
+]
+}
+
+{% endschema %}

@@ -14,34 +14,16 @@
         "type": "announcement-bar",
         "settings": {
           "announcement_text": "Free Shipping on orders over $50",
-          "announcement_text_color": "#efefef",
-          "background_color": "#000000"
+          "announcement_text_color": "#efefef"
         }
       },
       "header": {
         "type": "header",
-        "settings": {
-          "header_bg_color": "#ffffff",
-          "nav_links": ""
-        }
+        "settings": {}
       },
       "homepage": {
         "type": "homepage",
         "settings": {}
-      },
-      "test-bar": {
-        "type": "test-bar",
-        "settings": {
-          "test__bar": "#ffffff",
-          "bg__color": "#046997"
-        }
-      },
-      "hero": {
-        "type": "hero",
-        "settings": {
-          "hero_video": "",
-          "hero_text": "#ffffff"
-        }
       }
     },
     "content_for_index": []
