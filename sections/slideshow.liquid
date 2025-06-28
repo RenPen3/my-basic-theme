@@ -36,11 +36,11 @@
 
     <div class="slideshow-card">
       <div class="slideshow-img">
-        <img src="{{ section.settings.slideshow__image }}" width="100%" height="auto" alt="image1">
+        <img src="{{ section.settings.slideshow__image | img_url  }}" width="1200px" height="auto" alt="image1">
       </div>
       <div class="slideshow-body">
-        <div class="slideshow-title">{{ section.settings.slideshow__text }}</div>
-        <div class="slideshow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempora dolorum.</div>
+        <div class="slideshow-title" style="color: {{ section.settings.slideshow__title__color }}">{{ section.settings.slideshow__title }}</div>
+        <div class="slideshow-text" style="color:{{ section.settings.slideshow__sub__text__color }};">{{ section.settings.slideshow__sub__text }}</div>
       </div>
       <a href="#" class="slideshow-btn">Shop Now</a>
     </div>
@@ -61,9 +61,27 @@
     },
     {
     "type": "text",
-    "id": "slideshow__text",
+    "id": "slideshow__title",
     "label": "Card Title",
     "default": "Card Title Goes Here"
+    },
+    {
+    "type": "color",
+    "id": "slideshow__title__color",
+    "label": "Card Title Color",
+    "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "slideshow__sub__text",
+      "label": "Card Sub Text",
+      "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempora dolorum."
+    },
+    {
+      "type": "color",
+      "id": "slideshow__sub__text__color",
+      "label": "Card Sub Text Color",
+      "default": "#000000"
     }
 ]
 }
